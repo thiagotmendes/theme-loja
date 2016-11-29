@@ -3,6 +3,7 @@ function custom_theme_scripts() {
 	/* CSS */
 	wp_enqueue_style( 'Bootstrap', get_template_directory_uri().'/assets/css/bootstrap.min.css', array(),'3.3.6', 'screen' );
 	wp_enqueue_style( 'Estilo.global', get_template_directory_uri().'/assets/css/estilo.min.css', array(),'3.3.6', 'screen' );
+	wp_enqueue_style( 'woocommerce.est.global', get_template_directory_uri().'/devglob/css/estilo-woocommerce.css', array(),'3.3.6', 'screen' );
 
 	/* JS */
 	wp_enqueue_script( 'jquery' );

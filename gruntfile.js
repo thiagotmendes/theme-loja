@@ -10,7 +10,7 @@ module.exports = function(grunt){
       dist:{
         files:{
           'assets/css/bootstrap.min.css' : 'componentes/bootstrap/dist/css/bootstrap.css',
-          'assets/css/estilo.min.css' : 'globais/css/main.scss'
+          'assets/css/estilo.min.css' : 'devglob/css/main.scss'
         }
       }
     },
@@ -19,7 +19,7 @@ module.exports = function(grunt){
       my_target: {
         files: {
           'assets/js/bootstrap.min.js': ['componentes/bootstrap/dist/js/bootstrap.js'],
-          'assets/js/funcoes.min.js' : ['globais/js/funcoes.js']
+          'assets/js/funcoes.min.js' : ['devglob/js/funcoes.js']
         }
       }
     }

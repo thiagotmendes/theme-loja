@@ -37,7 +37,7 @@ require_once ('functions/theme_includes.php');
 /* ----------------------------------------------------- */
 /* Abilitando suporte a backgrounds */
 /* ----------------------------------------------------- */
-if (function_exists('add_custom_background')) add_custom_background();
+add_theme_support( 'custom-background' );
 /*
 Modo de uso:
 Não é preciso alterações no tema para esta funcionalidade
@@ -71,7 +71,8 @@ Modo de uso:
 /* ----------------------------------------------------- */
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
-        'name' => 'Lateral',
+        'name' => 'lateral',
+        'id'  => 1,
         'before_widget' => '<div class="panel panel-bos widget">',
         'after_widget' => '</div>',
         'before_title' => '<div class="panel-heading"><h3 class="panel-title">',
@@ -79,7 +80,7 @@ if ( function_exists('register_sidebar') )
     )
 );
 
-if ( function_exists('register_sidebar') )
+/*if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'name' => 'Loja',
         'before_widget' => '<div class="panel panel-bos widget">',
@@ -98,7 +99,7 @@ if ( function_exists('register_sidebar') )
         'before_title' => '<div class="><h3 class="">',
         'after_title' => '</h3></div>',
     )
-);
+);*/
 
 /*
 Modo de uso:

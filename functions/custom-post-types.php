@@ -2,7 +2,7 @@
 /* ----------------------------------------------------- */
 /* Post Types */
 /* ----------------------------------------------------- */
-/* Criando um Post Type Personalizado */
+/* Criando um Post Type Personalizado
 add_action('init', 'produtos_register');
 function produtos_register() {
 	 $labels = array(
@@ -39,10 +39,10 @@ function produtos_register() {
 }
 
 
-/* ----------------------------------------------------- */
+/* -----------------------------------------------------
 /* Taxonomias */
-/* ----------------------------------------------------- */
-/* Criando uma Taxonomia Personalizada */
+/* -----------------------------------------------------
+/* Criando uma Taxonomia Personalizada
 register_taxonomy("categoria-Produto", array("produto"),
 	array(
 		"hierarchical" => true,
@@ -52,7 +52,7 @@ register_taxonomy("categoria-Produto", array("produto"),
 	)
 );
 
-/*******************************************************/
+/*******************************************************
 
 
 add_action( 'restrict_manage_posts', 'my_restrict_manage_posts' );
@@ -94,3 +94,4 @@ function custom_columns( $column, $post_id ) {
 			break;
 	}
 }
+*/

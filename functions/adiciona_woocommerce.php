@@ -3,3 +3,5 @@
 	function woocommerce_support() {
 	    add_theme_support( 'woocommerce' );
 	}
+
+	define('WOOCOMMERCE_USE_CSS', false);
