@@ -204,3 +204,23 @@ function wp_pagination($pages = '', $range = 9)
     if ( !empty($wp_query->query_vars['s']) ) $pagination['add_args'] = array( 's' => get_query_var( 's' ) );
     echo '<div class="wp_pagination">'.paginate_links( $pagination ).'</div>';
 }
+
+function title_page(){
+  if ( is_single() ) {
+    bloginfo('name'); echo " | "; single_post_title();
+  }elseif ( is_home() || is_front_page() ) {
+    bloginfo('name'); echo ' | ';
+    bloginfo('description');
+  }elseif ( is_page() ) {
+    single_post_title('');
+  }elseif ( is_search() ) {
+    bloginfo('name');
+    echo ' | Search results for ' . wp_specialchars($s);
+  }elseif ( is_404() ) {
+    bloginfo('name');
+    print ' | Not Found';
+  }else {
+    bloginfo('name');
+    wp_title('|');
+  }
+}
