@@ -1,0 +1,21 @@
+{
+  "name": "loja-geek",
+  "version": "1.0.0",
+  "description": "thema para o site loja dos geeks",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Thiagotmendes@bitbucket.org/Thiagotmendes/theme-loja.git"
+  },
+  "author": "Thiago Mendes",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Thiagotmendes/theme-loja#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
