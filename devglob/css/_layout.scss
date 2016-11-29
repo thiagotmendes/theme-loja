@@ -8,6 +8,16 @@ header{
   border-top: #000 solid 4px;
 }
 
+.btn-loja{
+  background-color: $backgroundMenuBarras;
+  color: $colorMenuBotoes;
+  transition-duration: 0.4s;
+}
+
+.btn-loja:hover{
+  background-color: $backgroundHover;
+}
+
 // especificações do layout
 .navbar-loja{
   background-color: $backgroundMenuBarras;
@@ -18,7 +28,7 @@ header{
 .navbar-loja .navbar-nav > li > a{
   color: $colorMenuBotoes;
   text-transform: uppercase;
-  transition-duration: 0.5;
+  transition-duration: 0.5s;
   font-size: 17px;
 }
 
