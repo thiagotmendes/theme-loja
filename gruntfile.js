@@ -10,6 +10,7 @@ module.exports = function(grunt){
       dist:{
         files:{
           'assets/css/bootstrap.min.css' : 'componentes/bootstrap/dist/css/bootstrap.css',
+          'assets/css/hover.min.css'     : 'componentes/hover/css/hover.css', 
           'assets/css/estilo.min.css' : 'devglob/css/main.scss'
         }
       }

@@ -2,3 +2,164 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
+.page-title{
+  /*float: left;*/
+}
+
+.barrItensLoja{
+  background-color: #333;
+  color: #fff;
+  padding: 8px 5px;
+}
+
+.woocommerce-result-count{
+  padding: 8px 0 0;
+}
+
+.titulo-produto a{
+  color: #000;
+}
+
+.titulo-produto a:hover{
+  color: #767777;
+  text-decoration: none;
+}
+
+.lista-produto{
+  z-index: 100;
+  margin-bottom: 20px;
+  border: #767777 solid 1px;
+}
+
+/********************************************/
+/******** Categorias sidebar *****************/
+/********************************************/
+.product-categories{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.product-categories li a{
+  color: #000;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 0px;
+  margin-bottom: 4px;
+}
+
+.product-categories li a:hover{
+  text-decoration: none;
+}
+
+.product-categories .children{
+  list-style: none;
+  margin: 6px 0;
+  padding: 0px;
+}
+
+.product-categories .children li a{
+  border-left: #767777 solid 4px;
+  padding-left: 10px;
+  padding-right: 0px;
+  transition-duration: 0.7s;
+}
+
+.product-categories .children li a:hover{
+  background-color: #767777;
+  color: #fff;
+}
+
+/********************************************/
+/******** slide para preço *****************/
+/********************************************/
+.price_slider {
+	margin-bottom: 1em;
+}
+
+.price_slider_amount {
+	text-align: right;
+	line-height: 2.4;
+	font-size: 0.8751em;
+}
+
+.price_label {
+	font-size: 14px;
+	line-height: 2;
+	font-weight: 900;
+	color: #4e5454;
+	float: left;
+	overflow: hidden;
+}
+.button {
+	margin-right: 10px;
+}
+
+.button {
+	float: left;
+}
+
+.ui-slider {
+	position: relative;
+	text-align: left;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	border-radius: 0px;
+	cursor: ew-resize;
+	outline: none;
+	top: -.3em;
+	margin-left: -.5em;
+	background-color: #000;
+	box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.7);
+}
+
+.ui-slider .ui-slider-handle:last-child {
+  box-shadow: -1px 1px 5px -1px rgba(0,0,0,0.7);
+}
+
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	border-radius: 0;
+	background-color: #000;
+}
+
+.price_slider_wrapper .ui-widget-content {
+	border-radius: 0;
+	background-color: #ccc;
+	border: 0;
+}
+
+.ui-slider-horizontal {
+	height: .7em;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+	left: -1px;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+	right: -1px;
+}
+/********************************************/
+/******** /slide para preço *****************/
+/********************************************/

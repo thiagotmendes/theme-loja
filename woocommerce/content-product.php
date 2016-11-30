@@ -27,23 +27,25 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<div class="col-md-4 col-lg-4 col-xs-12 col-sm-6" <?php //post_class(); ?>>
-	<?php if (has_post_thumbnail()): ?>
-		<div class="img-produto">
-			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail( 'high', array( 'class' => 'img-responsive' ) ); ?>
-			</a>
-		</div>
-	<?php endif; ?>
-	<h2> <?php the_title();?> </h2>
-	<div class="row">
-	  <div class="col-md-7">
-	    <p class="price"><?php echo $product->get_price_html(); ?></p>
-	  </div>
-		<div class="col-md-5">
-			<a class="btn btn-loja btn-block" href="<?php the_permalink() ?>"	title="<?php echo get_the_title() ; ?>" alt="<?php echo get_the_title() ; ?>" >
-				teste
-			</a>
+<div class="col-md-3 col-lg-3 col-xs-12 col-sm-6" <?php //post_class(); ?>>
+	<div class="lista-produto hvr-grow-shadow">
+		<?php if (has_post_thumbnail()): ?>
+			<div class="img-produto">
+				<a href="<?php the_permalink(); ?>">
+					<?php the_post_thumbnail( 'high', array( 'class' => 'img-responsive' ) ); ?>
+				</a>
+			</div>
+		<?php endif; ?>
+		<h2 class="titulo-produto"> <a href="<?php the_permalink() ?>"> <?php the_title();?> </a> </h2>
+		<div class="row">
+		  <div class="col-md-7 rmpadright">
+		    <p class="price"><?php echo $product->get_price_html(); ?></p>
+		  </div>
+			<div class="col-md-5 rmpadleft">
+				<a class="btn btn-loja btn-block" href="<?php the_permalink() ?>"	title="<?php echo get_the_title() ; ?>" alt="<?php echo get_the_title() ; ?>" >
+					Comprar
+				</a>
+			</div>
 		</div>
 	</div>
 </div>

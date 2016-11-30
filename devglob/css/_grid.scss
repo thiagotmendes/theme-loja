@@ -1,11 +1,32 @@
 $innerTopBottom: 35px;
 $minHeight: 600px;
 
+.navbar{
+  margin-bottom: 0px !important;
+}
+
 main{
   min-height: $minHeight;
+  padding-top: $innerTopBottom;
+  padding-bottom: $innerTopBottom;
 }
 
 footer{
   padding-top: $innerTopBottom;
   padding-bottom: $innerTopBottom;
+}
+
+/******** SIDEBAR ********/
+.formpesquisa{
+  margin-bottom: 30px;
+}
+
+/***********************/
+
+.rmpadright{
+  padding-right: 0px !important;
+}
+
+.rmpadleft{
+  padding-left: 0px !important;
 }

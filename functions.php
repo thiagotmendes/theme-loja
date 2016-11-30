@@ -80,9 +80,10 @@ if ( function_exists('register_sidebar') )
     )
 );
 
-/*if ( function_exists('register_sidebar') )
+if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'name' => 'Loja',
+        'id'  => 2,
         'before_widget' => '<div class="panel panel-bos widget">',
         'after_widget' => '</div>',
         'before_title' => '<div class="panel-heading"><h3 class="panel-title">',
@@ -90,7 +91,7 @@ if ( function_exists('register_sidebar') )
     )
 );
 
-
+/*
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'name' => 'rodape',
