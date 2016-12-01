@@ -5,6 +5,14 @@ $minHeight: 600px;
   margin-bottom: 0px !important;
 }
 
+h1, .h1, h2, .h2, h3, .h3{
+  margin-top: 0px !important;
+}
+
+.banner{
+  margin-top: 15px;
+}
+
 main{
   min-height: $minHeight;
   padding-top: $innerTopBottom;
