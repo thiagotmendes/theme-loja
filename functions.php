@@ -226,3 +226,17 @@ function title_page(){
     wp_title('|');
   }
 }
+
+function banner_home($posicaoBanner,$idHome)
+{
+  $posicao = get_field('banners_de_categoria', $idHome);
+  if ($posicao):
+    foreach($posicao as $posicaoImagem1):
+      $imagem = $posicaoImagem1['imagem'];
+      //var_dump($imagem);
+      if($posicaoImagem1['posição'] == $posicaoBanner):
+        echo "<img src='".$imagem['url']."' alt='".$imagem['alt']."' class='img-responsive'>";
+      endif;
+    endforeach;
+  endif;
+}

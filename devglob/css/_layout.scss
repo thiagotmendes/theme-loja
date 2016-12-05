@@ -29,15 +29,21 @@ header{
   color: $colorMenuBotoes !important;
 }
 
+//BARRA SUPERIOR
+.barra-superior{
+  background-color: #810f12;
+}
+
 // especificações do layout
 .navbar-loja{
-  background-color: $backgroundBarrMenu;
-  color: $colorMenuBotoes;
+  /*background-color: $backgroundBarrMenu;*/
+  border-bottom: $backgroundBarrMenu solid 3px;
+  color: #333;
   border-radius: 0px;
 }
 
 .navbar-loja .navbar-nav > li > a{
-  color: $colorMenuBotoes;
+  color: #000;
   text-transform: uppercase;
   transition-duration: 0.5s;
   font-size: 17px;
@@ -47,7 +53,8 @@ header{
 .navbar-loja .navbar-nav > li > a:hover,
 .navbar-loja .navbar-nav > li.active > a,
 .navbar-loja .navbar-nav > li.active > a:focus{
-  background-color: $backgroundMenuBarras;
+  background-color: $backgroundBarrMenu;
+  color: #fff !important;
 }
 
 footer{
