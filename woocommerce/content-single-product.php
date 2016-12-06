@@ -21,7 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-
 <?php
 	/**
 	 * woocommerce_before_single_product hook.
@@ -49,22 +48,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 	<div class="col-md-8 summary entry-summary">
+		<div class="row">
+			<div class="col-md-7">
+				<?php
+					/**
+					 * woocommerce_single_product_summary hook.
+					 *
+					 * @hooked woocommerce_template_single_title - 5
+					 * @hooked woocommerce_template_single_rating - 10
+					 * @hooked woocommerce_template_single_price - 10
+					 * @hooked woocommerce_template_single_excerpt - 20
+					 * @hooked woocommerce_template_single_add_to_cart - 30
+					 * @hooked woocommerce_template_single_meta - 40
+					 * @hooked woocommerce_template_single_sharing - 50
+					 */
+					do_action( 'woocommerce_single_product_summary' );
+				?>
+			</div>
+			<div class="col-md-5">
 
-		<?php
-			/**
-			 * woocommerce_single_product_summary hook.
-			 *
-			 * @hooked woocommerce_template_single_title - 5
-			 * @hooked woocommerce_template_single_rating - 10
-			 * @hooked woocommerce_template_single_price - 10
-			 * @hooked woocommerce_template_single_excerpt - 20
-			 * @hooked woocommerce_template_single_add_to_cart - 30
-			 * @hooked woocommerce_template_single_meta - 40
-			 * @hooked woocommerce_template_single_sharing - 50
-			 */
-			do_action( 'woocommerce_single_product_summary' );
-		?>
-
+			</div>
+		</div>
 	</div><!-- .summary -->
 
 	<div class="col-md-12">

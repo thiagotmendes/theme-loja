@@ -29,6 +29,21 @@ header{
   color: $colorMenuBotoes !important;
 }
 
+.breadcrumb{
+  background-color: #f1f1f1;
+  border-bottom: #f8f8f8 solid 1px;
+  color: $backgroundBotoes
+}
+
+.breadcrumb a{
+  color: #000;
+}
+
+.breadcrumb a:hover{
+  color: $backgroundBotoes;
+  text-decoration: none;
+}
+
 //BARRA SUPERIOR
 .barra-superior{
   background-color: #810f12

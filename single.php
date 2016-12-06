@@ -1,4 +1,15 @@
 <?php get_header() ?>
+<section class="breadcrumb" role="breadcrumbs">
+  <div class="container">
+    <?php
+    if ( function_exists('yoast_breadcrumb') ) {
+    yoast_breadcrumb('
+    <p id="breadcrumbs">','</p>
+    ');
+    }
+    ?>
+  </div>
+</section>
   <main>
     <div class="container">
       <div class="row">
@@ -14,7 +25,7 @@
                   </div>
                 <?php endif; ?>
                 <h2><?php the_title() ?></h2>
-                <p><?php the_content() ?></p>      
+                <p><?php the_content() ?></p>
               </article>
           	<?php endwhile; ?>
           		<?php wp_pagination() ?>

@@ -18,3 +18,7 @@
 ?>
 <div class="products">
   <div class="">
+    <div class="col-md-2">
+      <?php get_sidebar('loja') ?>
+    </div>
+    <div class="col-md-10">

@@ -39,14 +39,43 @@ module.exports = function(grunt){
       },
     },
 
+    // watch - acompanha as modificações nos arquivos deforma altomatica
+    watch: {
+      options:{
+        livereload: true
+      },
+      sass: {
+        files: 'devglob/css/*.scss',
+        tasks: 'sass'
+      },
+      js: {
+        files:'devglob/js/funcoes.js',
+        tasks: 'uglify'
+      }
+    },
+    // conect - executa um servidor para auto-reload
+    connect: {
+      server :{
+        options:{
+          port: '8000',
+          hostname: 'localhost',
+          base: '/xampp/htdocs/geeks',
+          livereload: true
+        }
+      }
+    },
+
   });
 
   //load plugins
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // register tasks
   grunt.registerTask('site', ['sass','uglify','copy']);
+  grunt.registerTask('live',['connect','watch']);
 
 }

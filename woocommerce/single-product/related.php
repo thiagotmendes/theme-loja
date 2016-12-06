@@ -45,12 +45,10 @@ $woocommerce_loop['name']    = 'related';
 $woocommerce_loop['columns'] = apply_filters( 'woocommerce_related_products_columns', $columns );
 
 if ( $products->have_posts() ) : ?>
+	<h2><?php _e( 'Related Products', 'woocommerce' ); ?></h2>
+	<div class="related products row">
 
-	<div class="related products">
-
-		<h2><?php _e( 'Related Products', 'woocommerce' ); ?></h2>
-
-		<?php woocommerce_product_loop_start(); ?>
+		<?php //woocommerce_product_loop_start(); ?>
 
 			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
@@ -58,7 +56,7 @@ if ( $products->have_posts() ) : ?>
 
 			<?php endwhile; // end of the loop. ?>
 
-		<?php woocommerce_product_loop_end(); ?>
+		<?php //woocommerce_product_loop_end(); ?>
 
 	</div>
 

@@ -15,8 +15,10 @@
   "homepage": "https://bitbucket.org/Thiagotmendes/theme-loja#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^1.2.1"
   }
 }
