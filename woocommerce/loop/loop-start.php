@@ -16,8 +16,5 @@
  * @version     2.0.0
  */
 ?>
-<div class="products row">
-  <div class="col-md-2">
-    <?php get_sidebar('loja') ?>
-  </div>
-  <div class="col-md-10">
+<div class="products">
+  <div class="">

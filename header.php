@@ -13,7 +13,7 @@
           <?php
           $args = array(
             'theme_location' => 'menu_topo',
-            'menu_class' => 'nav navbar-nav navbar-right',
+            'menu_class' => 'menu-superior navbar-right',
             'fallback_cb' => 'fallback',
           );
           wp_nav_menu( $args );
@@ -38,7 +38,7 @@
           <div class="collapse navbar-collapse" id="navbar">
             <?php
   		    	$args = array(
-  		    		'menu' => 'principal',
+  		    		'theme_location' => 'top-bar',
   		    		'menu_class' => 'nav navbar-nav menu-site navbar-right',
               'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
   		    		'walker'	 => new wp_bootstrap_navwalker()

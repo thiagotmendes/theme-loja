@@ -36,19 +36,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 }
 ?>
 
-<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" class="row" <?php //post_class(); ?>>
+	<div class="col-md-4">
+		<?php if (has_post_thumbnail()): ?>
+			<div class="img-produto-interno">
+				<a href="<?php the_permalink(); ?>">
+					<?php the_post_thumbnail( 'high', array( 'class' => 'img-responsive' ) ); ?>
+				</a>
+			</div>
+		<?php endif; ?>
+	</div>
 
-	<?php
-		/**
-		 * woocommerce_before_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_show_product_sale_flash - 10
-		 * @hooked woocommerce_show_product_images - 20
-		 */
-		do_action( 'woocommerce_before_single_product_summary' );
-	?>
 
-	<div class="summary entry-summary">
+	<div class="col-md-8 summary entry-summary">
 
 		<?php
 			/**
@@ -67,17 +67,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</div><!-- .summary -->
 
-	<?php
-		/**
-		 * woocommerce_after_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_output_product_data_tabs - 10
-		 * @hooked woocommerce_upsell_display - 15
-		 * @hooked woocommerce_output_related_products - 20
-		 */
-		do_action( 'woocommerce_after_single_product_summary' );
-	?>
-
+	<div class="col-md-12">
+		<?php
+			/**
+			 * woocommerce_after_single_product_summary hook.
+			 *
+			 * @hooked woocommerce_output_product_data_tabs - 10
+			 * @hooked woocommerce_upsell_display - 15
+			 * @hooked woocommerce_output_related_products - 20
+			 */
+			do_action( 'woocommerce_after_single_product_summary' );
+		?>
+	</div>
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 
 </div><!-- #product-<?php the_ID(); ?> -->

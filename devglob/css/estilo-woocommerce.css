@@ -60,11 +60,13 @@
 /********************************************/
 /******** Categorias sidebar *****************/
 /********************************************/
+.woocommerce-MyAccount-navigation ul,
 .product-categories{
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
+
 
 .product-categories li a{
   color: #000;
@@ -87,16 +89,51 @@
   padding: 0px;
 }
 
+.woocommerce-MyAccount-navigation ul li a,
 .product-categories .children li a{
+  display: block;
+  color: #000;
   border-left: #767777 solid 4px;
   padding-left: 10px;
   padding-right: 0px;
   transition-duration: 0.7s;
+  margin-bottom: 4px;
 }
 
+.woocommerce-MyAccount-navigation ul li a:hover,
 .product-categories .children li a:hover{
   background-color: #767777;
   color: #fff;
+  text-decoration: none;
+}
+
+/************************************************/
+/************* PRODUCT SINGLE PAGE *************/
+.tabs{
+  background-color: #000;
+  border: #ccc solid 1px;
+  list-style: none;
+  clear: both;
+  padding: 0px;
+  margin:25px 0px 10px;
+}
+
+.tabs li{
+  display: table-cell;
+}
+
+.tabs li a{
+  display: block;
+  padding: 15px;
+  color: #fff;
+  transition-duration: 0.2s;
+}
+
+.tabs li.active a,
+.tabs li a:hover{
+  background-color: #fff !important;
+  color: #000 !important;
+  text-decoration: none;
 }
 
 /********************************************/

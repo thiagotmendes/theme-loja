@@ -13,6 +13,7 @@ module.exports = function(grunt){
           'assets/css/hover.min.css'     : 'componentes/hover/css/hover.css',
           'assets/css/slick.min.css'     : 'componentes/slick-carousel/slick/slick.css',
           'assets/css/slick-theme.min.css' : 'componentes/slick-carousel/slick/slick-theme.css',
+          'assets/css/font-awesome.css' : 'componentes/font-awesome/css/font-awesome.css',
           'assets/css/estilo.min.css'    : 'devglob/css/main.scss'
         }
       }
@@ -32,7 +33,8 @@ module.exports = function(grunt){
       main: {
         files: [
           {expand: true,flatten: true, src: 'componentes/slick-carousel/slick/fonts/*', dest: 'assets/css/fonts'},
-          {expand: true,flatten: true, src: 'componentes/bootstrap/fonts/*', dest: 'assets/fonts',}
+          {expand: true,flatten: true, src: 'componentes/bootstrap/fonts/*', dest: 'assets/fonts',},
+          {expand: true,flatten: true, src: 'componentes/font-awesome/fonts/*', dest: 'assets/fonts',}
         ]
       },
     },

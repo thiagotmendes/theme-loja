@@ -22,6 +22,11 @@ section{
   padding-bottom: 15px;
 }
 
+section.barra-superior{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
 main{
   min-height: $minHeight;
   padding-top: $innerTopBottom;
@@ -46,4 +51,15 @@ footer{
 
 .rmpadleft{
   padding-left: 0px !important;
+}
+/*************/
+.menu-superior{
+  padding: 0;
+  margin: 0px;
+  list-style: none;
+}
+
+.menu-superior li{
+  float: left;
+  padding: 3px 8px;
 }

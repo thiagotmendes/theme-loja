@@ -31,7 +31,18 @@ header{
 
 //BARRA SUPERIOR
 .barra-superior{
-  background-color: #810f12;
+  background-color: #810f12
+}
+
+.menu-superior li a{
+  color: #fff;
+  display: block;
+  padding: 3px 10px 8px;
+}
+
+.menu-superior li a:hover{
+  color: #ccc;
+  text-decoration: none;
 }
 
 // especificações do layout

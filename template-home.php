@@ -92,8 +92,8 @@
           <?php
           $argProdutoRandon = array(
             'post_type'       => 'product',
-            'orderby'         => 'rand',
             'posts_per_page'  => 8
+
           );
           $produtosRandon = new wp_query($argProdutoRandon);
           if ($produtosRandon->have_posts()) {

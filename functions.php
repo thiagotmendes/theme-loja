@@ -235,7 +235,9 @@ function banner_home($posicaoBanner,$idHome)
       $imagem = $posicaoImagem1['imagem'];
       //var_dump($imagem);
       if($posicaoImagem1['posição'] == $posicaoBanner):
+        echo "<a href='".$posicaoImagem1['link']."' >";
         echo "<img src='".$imagem['url']."' alt='".$imagem['alt']."' class='img-responsive'>";
+        echo "</a>";
       endif;
     endforeach;
   endif;
