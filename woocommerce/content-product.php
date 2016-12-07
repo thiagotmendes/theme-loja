@@ -26,6 +26,8 @@ global $product;
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
+
+//var_dump($product);
 ?>
 <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6" <?php //post_class(); ?>>
 	<div class="lista-produto hvr-grow-shadow">
@@ -37,13 +39,12 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 			</div>
 		<?php endif; ?>
 		<h2 class="titulo-produto"> <a href="<?php the_permalink() ?>"> <?php the_title();?> </a> </h2>
+		<p class="price"><?php echo $product->get_price_html(); ?></p>
 		<div class="row">
-		  <div class="col-md-7 rmpadright">
-		    <p class="price"><?php echo $product->get_price_html(); ?></p>
-		  </div>
-			<div class="col-md-5 rmpadleft">
-				<a class="btn btn-loja btn-block" href="<?php the_permalink() ?>"	title="<?php echo get_the_title() ; ?>" alt="<?php echo get_the_title() ; ?>" >
-					Comprar
+			<div class="col-md-12">
+				<a class="btn btn-loja btn-block btn-compra" href="" data-product="<?php echo $product->id; ?>"
+					alt="<?php echo get_the_title() ; ?>" >
+					<i class="fa fa-retweet" aria-hidden="true"></i> Comprar
 				</a>
 			</div>
 		</div>

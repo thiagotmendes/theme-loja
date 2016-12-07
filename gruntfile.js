@@ -59,7 +59,7 @@ module.exports = function(grunt){
         options:{
           port: '8000',
           hostname: 'localhost',
-          base: '/xampp/htdocs/geeks',
+          base: '/  xampp/htdocs/geeks',
           livereload: true
         }
       }

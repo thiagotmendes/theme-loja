@@ -44,3 +44,18 @@ jQuery(document).ready(function() {
   });
 
 });
+
+jQuery(document).ready(function($) {
+  jQuery('.btn-compra[data-product]').click(function(e) {
+     e.preventDefault();
+     var produto = $(this).attr("data-product");
+     addToCart(produto);
+     return false;
+  });
+
+  function addToCart(p_id) {
+     jQuery.get('?add-to-cart=' + p_id, function() {
+        alert('produto adicionado');
+     });
+  }
+});

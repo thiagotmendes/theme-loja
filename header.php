@@ -39,12 +39,20 @@
             <?php
   		    	$args = array(
   		    		'theme_location' => 'top-bar',
-  		    		'menu_class' => 'nav navbar-nav menu-site navbar-right',
+  		    		'menu_class' => 'nav navbar-nav menu-site',
               'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
   		    		'walker'	 => new wp_bootstrap_navwalker()
   		    	);
   		    	wp_nav_menu( $args );
             ?>
+            <ul class="nav navbar-nav menu-site navbar-right">
+              <li>
+                <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+                  <?php
+                  echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ),
+                  WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
+              </li>
+            </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
