@@ -44,7 +44,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 			<div class="col-md-12">
 				<a class="btn btn-loja btn-block btn-compra" href="" data-product="<?php echo $product->id; ?>"
 					alt="<?php echo get_the_title() ; ?>" >
-					<i class="fa fa-retweet" aria-hidden="true"></i> Comprar
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i> Comprar
 				</a>
 			</div>
 		</div>

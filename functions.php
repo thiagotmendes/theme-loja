@@ -71,8 +71,8 @@ Modo de uso:
 /* ----------------------------------------------------- */
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
-        'name' => 'lateral',
-        'id'  => 1,
+        'name' => 'Lateral',
+        'id'  => 'lateral',
         'before_widget' => '<div class="panel panel-bos widget">',
         'after_widget' => '</div>',
         'before_title' => '<div class="panel-heading"><h3 class="panel-title">',
@@ -83,7 +83,7 @@ if ( function_exists('register_sidebar') )
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'name' => 'Loja',
-        'id'  => 2,
+        'id'  => 'loja',
         'before_widget' => '<div class="panel panel-bos widget">',
         'after_widget' => '</div>',
         'before_title' => '<div class="panel-heading"><h3 class="panel-title">',
@@ -91,16 +91,50 @@ if ( function_exists('register_sidebar') )
     )
 );
 
-/*
+
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
-        'name' => 'rodape',
+        'name' => 'rodape 1',
+        'id'  => 'rodape-1',
         'before_widget' => '<div class="">',
         'after_widget' => '</div>',
-        'before_title' => '<div class="><h3 class="">',
-        'after_title' => '</h3></div>',
+        'before_title' => '<h3 class="title-rodape">',
+        'after_title' => '</h3>',
     )
-);*/
+);
+
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'name' => 'rodape 2',
+        'id'  => 'rodape-2',
+        'before_widget' => '<div class="">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="title-rodape">',
+        'after_title' => '</h3>',
+    )
+);
+
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'name' => 'rodape 3',
+        'id'  => 'rodape-3',
+        'before_widget' => '<div class="">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="title-rodape">',
+        'after_title' => '</h3>',
+    )
+);
+
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'name' => 'rodape 4',
+        'id'  => 'rodape-4',
+        'before_widget' => '<div class="">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="title-rodape">',
+        'after_title' => '</h3>',
+    )
+);
 
 /*
 Modo de uso:
