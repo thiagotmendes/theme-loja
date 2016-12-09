@@ -24,28 +24,28 @@
           echo "<div class='row slider-produtos'>";
             while($sliderProdutos->have_posts()): $sliderProdutos->the_post();
             ?>
-              <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6" role="produto">
-                <div class="lista-produto">
-              		<?php if (has_post_thumbnail()): ?>
-              			<div class="img-produto">
-              				<a href="<?php the_permalink(); ?>">
-              					<?php the_post_thumbnail( 'high', array( 'class' => 'img-responsive' ) ); ?>
-              				</a>
-              			</div>
-              		<?php endif; ?>
-              		<h2 class="titulo-produto"> <a href="<?php the_permalink() ?>"> <?php the_title();?> </a> </h2>
-              		<div class="row">
-              		  <div class="col-md-7 rmpadright">
-              		    <p class="price" role="preço"><?php echo $product->get_price_html(); ?></p>
-              		  </div>
-              			<div class="col-md-5 rmpadleft">
-              				<a class="btn btn-loja btn-block" href="<?php the_permalink() ?>"	title="<?php echo get_the_title() ; ?>" alt="<?php echo get_the_title() ; ?>" >
-              					Comprar
-              				</a>
-              			</div>
-              		</div>
-              	</div>
+            <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6" <?php //post_class(); ?>>
+              <div class="lista-produto hvr-grow-shadow">
+                <?php if (has_post_thumbnail()): ?>
+                  <div class="img-produto">
+                    <a href="<?php the_permalink(); ?>">
+                      <?php the_post_thumbnail( 'high', array( 'class' => 'img-responsive' ) ); ?>
+                    </a>
+                  </div>
+                <?php endif; ?>
+                <h2 class="titulo-produto"> <a href="<?php the_permalink() ?>"> <?php the_title();?> </a> </h2>
+                <p class="price"><?php echo $product->get_price_html(); ?></p>
+                <div class="row">
+                  <div class="col-md-12">
+                    <a class="btn btn-loja btn-block" href="" data-product="<?php echo the_permalink() ?>"
+                      alt="<?php echo get_the_title() ; ?>" >
+                      <i class="fa fa-shopping-cart" aria-hidden="true"></i> Comprar
+                    </a>
+                  </div>
+                </div>
               </div>
+            </div>
+
             <?php
             endwhile;
           echo "</div>";
@@ -58,7 +58,7 @@
       </section>
       <section class="banners-categorias" role="categoria">
         <!-- produtos por categoria -->
-          <h2 class="titulo-home">Conheça</h2>
+          <h2 class="titulo-home">Loja do Geek</h2>
           <div class="row bnPublicidade">
             <div class="col-md-4 rmpadright">
               <div class="bannerPosicao1 bnCategoriaHome">
@@ -87,7 +87,7 @@
       </section>
       <!-- produtos randomicos -->
       <section class="produtos-randon">
-        <h2 class="titulo-home">Conheça</h2>
+        <h2 class="titulo-home">Produtos</h2>
         <div class="row">
           <?php
           $argProdutoRandon = array(
@@ -99,7 +99,8 @@
           if ($produtosRandon->have_posts()) {
             while ($produtosRandon->have_posts()) { $produtosRandon->the_post()
             ?>
-            <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6" role="produtos" <?php //post_class(); ?>>
+
+            <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6" <?php //post_class(); ?>>
             	<div class="lista-produto hvr-grow-shadow">
             		<?php if (has_post_thumbnail()): ?>
             			<div class="img-produto">
@@ -109,18 +110,18 @@
             			</div>
             		<?php endif; ?>
             		<h2 class="titulo-produto"> <a href="<?php the_permalink() ?>"> <?php the_title();?> </a> </h2>
+            		<p class="price"><?php echo $product->get_price_html(); ?></p>
             		<div class="row">
-            		  <div class="col-md-7 rmpadright">
-            		    <p class="price" role="preco"><?php echo $product->get_price_html(); ?></p>
-            		  </div>
-            			<div class="col-md-5 rmpadleft">
-            				<a class="btn btn-loja btn-block" href="<?php the_permalink() ?>"	title="<?php echo get_the_title() ; ?>" alt="<?php echo get_the_title() ; ?>" >
-            					Comprar
+            			<div class="col-md-12">
+            				<a class="btn btn-loja btn-block" href="" data-product="<?php echo the_permalink() ?>"
+            					alt="<?php echo get_the_title() ; ?>" >
+            					<i class="fa fa-shopping-cart" aria-hidden="true"></i> Comprar
             				</a>
             			</div>
             		</div>
             	</div>
             </div>
+
             <?php
             }
           }

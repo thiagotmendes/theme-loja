@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				?>
 			</div>
 			<div class="col-md-5">
-
+				<img src="http://lojadosgeeks.com.br/wp-content/uploads/2016/12/40451.jpg" alt="" class="img-responsive">
 			</div>
 		</div>
 	</div><!-- .summary -->
