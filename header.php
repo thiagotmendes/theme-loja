@@ -46,12 +46,16 @@
   		    	wp_nav_menu( $args );
             ?>
             <ul class="nav navbar-nav menu-site navbar-right">
-              <li>
+              <li class="dropdown" id="cart_container">
                 <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                  <?php
-                  echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ),
-                  WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
+                  <?php do_action('woocommerce_add_to_cart_fragments') ?>
+                </a>
+                  <ul class="dropdown-menu carrinho-dropdown">
+                    <li>
+                      <?php do_action('wp_ajax_nopriv_mode_theme_update_mini_cart') ?>
+                    </li>
+                  </ul>
               </li>
             </ul>
           </div><!-- /.navbar-collapse -->

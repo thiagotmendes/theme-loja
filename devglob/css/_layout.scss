@@ -48,6 +48,28 @@ header{
   text-decoration: none;
 }
 
+// CARRINHO
+.carrinho-dropdown{
+  border-color: #000;
+  min-width: 300px;
+  padding: 20px 15px;
+}
+
+.cart_list{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.remove{
+  background-color: #000;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  color: #fff;
+  font-size: 13px;
+}
+
 //BARRA SUPERIOR
 .barra-superior{
   background-color: #810f12

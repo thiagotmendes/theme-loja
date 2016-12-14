@@ -63,9 +63,17 @@ jQuery(document).ready(function($) {
   function addToCart(p_id) {
      jQuery.get('?add-to-cart=' + p_id, function() {
        jQuery('#sucesso').modal('show');
-       $('#sucesso').on('hidden.bs.modal', function () {
+      /* $('#sucesso').on('hidden.bs.modal', function () {
            location.reload();
-        });
+        });*/
      });
-  }
+  };
+
+	jQuery.post(
+	    woocommerce_params.ajax_url,
+	    {'action': 'mode_theme_update_mini_cart'},
+	    function(response) {
+			$('#mode-mini-cart').html(response);
+	    }
+	);
 });
