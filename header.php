@@ -47,9 +47,9 @@
             ?>
             <ul class="nav navbar-nav menu-site navbar-right">
               <li class="dropdown" id="cart_container">
-                <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+                <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>"
+                  title="<?php _e( 'View your shopping cart' ); ?>">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                  <?php do_action('woocommerce_add_to_cart_fragments') ?>
                 </a>
                   <ul class="dropdown-menu carrinho-dropdown">
                     <li>
