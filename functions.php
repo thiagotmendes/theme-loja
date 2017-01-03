@@ -19,6 +19,8 @@ if ( ! isset( $content_width ) ) $content_width = 610;
 /* ----------------------------------------------------- */
 require_once('functions/custom-post-types.php');
 
+// CARREGANDO O CUSTOMIZE
+require_once('functions/theme-customize.php');
 
 /**********************************************************/
 /*------------------------------------------------------*/

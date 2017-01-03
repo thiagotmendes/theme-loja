@@ -1,8 +1,8 @@
 // atribuição de cores
-$backgroundBarrMenu : #000;
+$backgroundBarrMenu : #0f2c4c;
 $backgroundMenuBarras : #767777;
-$backgroundBotoes:  #cf1d22;
-$backgroundBotoesHover : #810f12;
+$backgroundBotoes:  #0f2c4c;
+$backgroundBotoesHover : #021e3d;
 // cor de font onde estiver com background
 $colorMenuBotoes : #fff;
 
@@ -74,7 +74,7 @@ header{
   color: #810f12;
 }
 
-.remove{
+.cart_list .remove{
   background-color: #000;
   border-radius: 50%;
   margin-top: 40px;
@@ -96,7 +96,7 @@ header{
 
 //BARRA SUPERIOR
 .barra-superior{
-  background-color: #810f12
+  background-color: #0c4a8e
 }
 
 .menu-superior li a{

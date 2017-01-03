@@ -37,7 +37,7 @@
                 <p class="price"><?php echo $product->get_price_html(); ?></p>
                 <div class="row">
                   <div class="col-md-12">
-                    <a class="btn btn-loja btn-block" href="" data-product="<?php echo the_permalink() ?>"
+                    <a class="btn btn-loja btn-block" href="<?php the_permalink() ?>" data-product="<?php echo the_permalink() ?>"
                       alt="<?php echo get_the_title() ; ?>" >
                       <i class="fa fa-shopping-cart" aria-hidden="true"></i> Comprar
                     </a>
@@ -60,7 +60,7 @@
         <!-- produtos por categoria -->
           <h2 class="titulo-home">Loja do Geek</h2>
           <div class="row bnPublicidade">
-            <div class="col-md-4 rmpadright">
+            <div class="col-md-3 rmpadright">
               <div class="bannerPosicao1 bnCategoriaHome">
                 <?php
                 banner_home("posicao1",$idHome);
@@ -72,7 +72,7 @@
                 ?>
               </div>
             </div>
-            <div class="col-md-5 rmpadright rmpadleft">
+            <div class="col-md-6 rmpadright rmpadleft">
               <div class="bannerPosicao2 bnCategoriaHome">
                 <?php  banner_home("posicao2",$idHome); ?>
               </div>
@@ -113,7 +113,7 @@
             		<p class="price"><?php echo $product->get_price_html(); ?></p>
             		<div class="row">
             			<div class="col-md-12">
-            				<a class="btn btn-loja btn-block" href="" data-product="<?php echo the_permalink() ?>"
+            				<a class="btn btn-loja btn-block" href="<?php the_permalink() ?>" data-product="<?php echo the_permalink() ?>"
             					alt="<?php echo get_the_title() ; ?>" >
             					<i class="fa fa-shopping-cart" aria-hidden="true"></i> Comprar
             				</a>
